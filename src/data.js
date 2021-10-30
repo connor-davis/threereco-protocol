@@ -1,4 +1,4 @@
-import Gun from "gun/gun";
+import Gun from "gun";
 
 const gun = Gun({ axe: false });
 
