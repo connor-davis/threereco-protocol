@@ -1,6 +1,6 @@
 {
   "name": "threereco-protocol",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "The protocol that the 3rEco system will use.",
   "main": "index.js",
   "repository": "https://github.com/connor-davis/threereco-protocol",
