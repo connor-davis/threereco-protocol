@@ -16,10 +16,10 @@ const idExists = (id) => {
  * @param {Object} credentials The users authentication credentials.
  * @param {String} credentials.id
  * @param {String} credentials.password
- * 
+ *
  * @param {Function} callback The callback function that either returns error data or success data.
  */
-export default registerUser = (credentials, callback) => {
+const register = (credentials, callback) => {
   if (idExists(credentials.alias))
     return callback({
       errMessage: "ID already taken.",
@@ -42,3 +42,5 @@ export default registerUser = (credentials, callback) => {
     });
   }
 };
+
+export default register;

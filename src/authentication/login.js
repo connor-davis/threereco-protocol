@@ -9,7 +9,7 @@ import { user } from "../data";
  *
  * @param {Function} callback The callback function that either returns error data or success data.
  */
-export default loginUser = (credentials, callback) => {
+const login = (credentials, callback) => {
   if (!credentials.id || !credentials.password)
     return callback({
       errMessage: "Please provide required credentials.",
@@ -27,3 +27,5 @@ export default loginUser = (credentials, callback) => {
     });
   }
 };
+
+export default login;
